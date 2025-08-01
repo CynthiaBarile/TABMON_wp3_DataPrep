@@ -1,0 +1,189 @@
+﻿projectid,plotid,naam,bzdid,datum,begintijd,eindtijd,bezoekduur,aantal_minuten,gunstig,omst_opm,opm,waarnemerid,jaar,doy,nsoort,nrecord
+252,14784,"De Onlanden, P8, Drentse Dijk Oost",4083119,24-Mar,06:30:00,12:15:00,05:45:00,345,,,,34701,2025,83,22,111
+252,14784,"De Onlanden, P8, Drentse Dijk Oost",4087718,07-Apr,06:40:00,12:30:00,05:50:00,350,TRUE,,,34701,2025,97,22,146
+252,14784,"De Onlanden, P8, Drentse Dijk Oost",4093554,22-Apr,06:00:00,12:00:00,06:00:00,360,TRUE,,,34701,2025,112,21,158
+252,14784,"De Onlanden, P8, Drentse Dijk Oost",4102563,06-May,05:30:00,11:30:00,06:00:00,360,TRUE,,,34701,2025,126,23,130
+252,14784,"De Onlanden, P8, Drentse Dijk Oost",4108020,21-May,05:15:00,11:30:00,06:15:00,375,TRUE,,,34701,2025,141,29,139
+252,14784,"De Onlanden, P8, Drentse Dijk Oost",4109222,24-May,22:15:00,23:30:00,01:15:00,75,TRUE,,,34701,2025,144,5,8
+252,14784,"De Onlanden, P8, Drentse Dijk Oost",4112770,02-Jun,05:15:00,10:30:00,05:15:00,315,TRUE,,,34701,2025,153,26,118
+252,14885,AWD 2e Infiltr-noord,4075666,02-Mar,07:15:00,09:39:00,02:24:00,144,,,mist,16005,2025,61,26,56
+252,14885,AWD 2e Infiltr-noord,4078125,16-Mar,06:56:00,10:40:00,03:44:00,224,,,"onbewolkt windstil, later no 2. Temp 0-6 graden.",16005,2025,75,37,105
+252,14885,AWD 2e Infiltr-noord,4081977,29-Mar,05:23:00,09:35:00,04:12:00,252,,,,16005,2025,88,39,187
+252,14885,AWD 2e Infiltr-noord,4088680,12-Apr,05:43:00,09:43:00,04:00:00,240,,,start telling windstil volle maan,16005,2025,102,57,221
+252,14885,AWD 2e Infiltr-noord,4096138,27-Apr,05:18:00,09:35:00,04:17:00,257,,,,16005,2025,117,48,197
+252,14885,AWD 2e Infiltr-noord,4100277,05-May,05:10:00,09:42:00,04:32:00,272,,,,16005,2025,125,39,187
+252,14885,AWD 2e Infiltr-noord,4106473,18-May,05:18:00,08:18:00,03:00:00,180,,,,16005,2025,138,37,171
+252,14885,AWD 2e Infiltr-noord,4111222,30-May,21:55:00,23:09:00,01:14:00,74,,,avond-nachttelling,16005,2025,150,15,28
+252,14885,AWD 2e Infiltr-noord,4111842,01-Jun,04:57:00,08:58:00,04:01:00,241,,,,16005,2025,152,39,164
+252,14885,AWD 2e Infiltr-noord,4111843,01-Jun,09:02:00,09:02:00,00:00:00,0,,,,16005,2025,152,1,1
+252,14885,AWD 2e Infiltr-noord,4117680,15-Jun,04:41:00,07:38:00,02:57:00,177,,,,16005,2025,166,36,117
+252,14885,AWD 2e Infiltr-noord,4117681,15-Jun,04:41:00,07:38:00,02:57:00,177,,,,16005,2025,166,36,117
+252,17081,AWD Boeveld-west,4080228,23-Mar,08:13:00,10:29:00,02:16:24,136.4,,,"voor het eerst geen damhert gezien, ook niet buiten het kavel",34778,2025,82,18,49
+252,17081,AWD Boeveld-west,4083188,02-Apr,06:43:00,09:05:00,02:22:29,142.4833333,,,,34778,2025,92,10,40
+252,17081,AWD Boeveld-west,4088688,12-Apr,06:52:00,09:53:00,03:01:06,181.1,,,,34778,2025,102,18,78
+252,17081,AWD Boeveld-west,4091002,17-Apr,06:38:00,09:01:00,02:22:30,142.5,,,"Reserve, dicht op vorige telling, in juni maar weer puzzelen",34778,2025,107,21,66
+252,17081,AWD Boeveld-west,4093903,23-Apr,06:55:00,09:38:00,02:43:31,163.5166667,,,,34778,2025,113,19,63
+252,17081,AWD Boeveld-west,4098728,02-May,06:16:00,09:46:00,03:30:09,210.15,,,,34778,2025,122,19,59
+252,17081,AWD Boeveld-west,4103520,11-May,05:47:00,10:11:00,04:24:47,264.7833333,,,,34778,2025,131,27,88
+252,17081,AWD Boeveld-west,4106756,19-May,05:44:00,08:29:00,02:44:49,164.8166667,,,,34778,2025,139,24,66
+252,17081,AWD Boeveld-west,4110561,29-May,07:34:00,10:00:00,02:25:38,145.6333333,,,"(mot)regen, ook wel droge perioden. Paar tapuit ws vertrokken",34778,2025,149,22,57
+252,17081,AWD Boeveld-west,4113783,04-Jun,07:34:00,12:07:00,04:33:18,273.3,,,"13 graden, bries ZW, droog",34778,2025,155,23,63
+252,17364,AWD Wolfsveld-west,4080813,20-Mar,07:30:00,10:15:00,02:45:00,165,TRUE,,"onbewolkt, 5 graden, wind zuid kr.1",21041,2025,79,15,37
+252,17364,AWD Wolfsveld-west,4082756,27-Mar,07:30:00,10:00:00,02:30:00,150,TRUE,,"onbewolkt, 2 graden, wind ZZO",21041,2025,86,14,39
+252,17364,AWD Wolfsveld-west,4087295,03-Apr,07:30:00,10:00:00,02:30:00,150,,,"onbewolkt, temp. 5 graden, wind oost 3",21041,2025,93,12,38
+252,17364,AWD Wolfsveld-west,4090877,10-Apr,07:30:00,10:00:00,02:30:00,150,TRUE,,"bewolkt,7 graden, wind N.4",21041,2025,100,16,47
+252,17364,AWD Wolfsveld-west,4098044,17-Apr,07:30:00,10:00:00,02:30:00,150,TRUE,,"Bewolkt, droog, 10 graden",21041,2025,107,17,53
+252,17364,AWD Wolfsveld-west,4101624,01-May,07:00:00,10:00:00,03:00:00,180,,,"onbewolkt, 10 graden, Wind 0",21041,2025,121,20,55
+252,17364,AWD Wolfsveld-west,4101856,08-May,07:01:00,10:02:00,03:01:00,181,,,,45859,2025,128,20,77
+252,17364,AWD Wolfsveld-west,4105289,15-May,07:03:00,09:16:00,02:13:00,133,,,"wind n4
+temp 11 graden",45859,2025,135,15,53
+252,17364,AWD Wolfsveld-west,4108007,22-May,07:14:00,09:02:00,01:48:00,108,,,"wind nu 3
+half bewolkt
+10 graden",45859,2025,142,15,41
+252,17824,"De Onlanden, P4, Peizerwering",4084096,27-Mar,06:25:00,09:01:00,02:35:56,155.9333333,,,,24824,2025,86,20,106
+252,17824,"De Onlanden, P4, Peizerwering",4088761,09-Apr,06:31:00,08:55:00,02:24:12,144.2,,,,24824,2025,99,18,161
+252,17824,"De Onlanden, P4, Peizerwering",4089755,05-Mar,11:11:00,12:57:00,01:46:25,106.4166667,,,,39504,2025,64,9,63
+252,17824,"De Onlanden, P4, Peizerwering",4097613,29-Apr,19:10:00,21:25:00,02:14:49,134.8166667,,,,24824,2025,119,18,65
+252,17824,"De Onlanden, P4, Peizerwering",4107162,20-May,05:11:00,08:28:00,03:17:12,197.2,,,,24824,2025,140,27,101
+252,17824,"De Onlanden, P4, Peizerwering",4116677,11-Jun,11:50:00,12:40:00,00:50:18,50.3,,,,24824,2025,162,8,16
+252,18556,"De Onlanden, P7, Weeringsbroeken",4079477,21-Mar,06:30:00,10:40:00,04:10:00,250,TRUE,,,25206,2025,80,14,56
+252,18556,"De Onlanden, P7, Weeringsbroeken",4083896,03-Apr,06:45:00,09:40:00,02:55:00,175,TRUE,,,25206,2025,93,15,58
+252,18556,"De Onlanden, P7, Weeringsbroeken",4090610,16-Apr,06:15:00,09:30:00,03:15:00,195,TRUE,,,25206,2025,106,22,124
+252,18556,"De Onlanden, P7, Weeringsbroeken",4093307,22-Apr,12:00:00,12:05:00,00:05:00,5,TRUE,,,25206,2025,112,2,3
+252,18556,"De Onlanden, P7, Weeringsbroeken",4097850,30-Apr,05:50:00,10:00:00,04:10:00,250,TRUE,,,25206,2025,120,20,152
+252,18556,"De Onlanden, P7, Weeringsbroeken",4105751,16-May,05:30:00,09:30:00,04:00:00,240,TRUE,,,25206,2025,136,20,149
+252,18556,"De Onlanden, P7, Weeringsbroeken",4111932,01-Jun,00:01:00,01:00:00,00:59:00,59,TRUE,,,25206,2025,152,3,4
+252,18556,"De Onlanden, P7, Weeringsbroeken",4113705,04-Jun,05:00:00,08:00:00,03:00:00,180,TRUE,,,25206,2025,155,14,119
+252,19410,Plot 2 Steegsdennen,4082057,29-Mar,09:09:00,11:19:00,02:09:53,129.8833333,,,2 maal reegeit,21,2025,88,23,95
+252,19410,Plot 2 Steegsdennen,4086517,08-Apr,09:03:00,11:10:00,02:07:04,127.0666667,,,6 zandhagedissen lagen te zonnen,21,2025,98,28,150
+252,19410,Plot 2 Steegsdennen,4095905,26-Apr,09:15:00,11:40:00,02:25:09,145.15,,,de hotspot van hoge veluwe bonte vliegenvanger,21,2025,116,26,168
+252,19410,Plot 2 Steegsdennen,4100920,06-May,09:16:00,11:41:00,02:25:56,145.9333333,,,,21,2025,126,30,160
+252,19410,Plot 2 Steegsdennen,4106244,17-May,09:04:00,11:17:00,02:13:03,133.05,,,,21,2025,137,25,132
+252,19410,Plot 2 Steegsdennen,4111502,31-May,09:03:00,11:27:00,02:24:24,144.4,,,2 zandhagedissen en hinde met kalf,21,2025,151,30,145
+252,19410,Plot 2 Steegsdennen,4116081,10-Jun,09:15:00,11:15:00,01:59:34,119.5666667,,,"hinde met kalf, veel jonge vogels, veel wind en net voor de bui klaar",21,2025,161,22,94
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4076612,08-Mar,08:49:00,11:35:00,02:46:07,166.1166667,,,,27602,2025,67,16,59
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4080140,23-Mar,06:28:00,08:25:00,01:57:10,117.1666667,,,,27602,2025,82,14,37
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4086451,08-Apr,06:53:00,09:45:00,02:52:06,172.1,,,,27602,2025,98,18,70
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4089940,15-Apr,06:45:00,09:23:00,02:37:23,157.3833333,,,,27602,2025,105,18,84
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4095584,25-Apr,15:56:00,17:34:00,01:38:00,98,,,"Ik zocht vanwege daglicht naar steltkluut; die was er niet. De kraanvogels daarentegen waren er weer en hielden zich twee dagen geleden, 23 april, op dezelfde plek op. Ook vloog een kraanvogelpaar over in oostelijke richting (niet genoteerd).",27602,2025,115,18,27
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4097110,27-Apr,11:04:00,12:30:00,01:26:00,86,,,,27602,2025,117,12,35
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4097477,29-Apr,10:13:00,11:22:00,01:09:00,69,,,,27602,2025,119,14,34
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4104373,05-May,20:55:00,21:42:00,00:47:00,47,,,,27602,2025,125,8,24
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4104374,06-May,20:37:00,21:35:00,00:58:00,58,,,,27602,2025,126,13,23
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4104739,13-May,06:19:00,10:40:00,04:21:10,261.1666667,,,,27602,2025,133,29,110
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4109880,25-May,21:13:00,22:06:00,00:53:05,53.08333333,,,,27602,2025,145,15,35
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4109881,26-May,20:41:00,22:10:00,01:28:51,88.85,,,,27602,2025,146,20,43
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4113232,03-Jun,05:33:00,08:30:00,02:56:54,176.9,,,,27602,2025,154,26,84
+252,23294,"De Onlanden, P12, Eeldermaden Zuidoost",4117551,14-Jun,05:21:00,07:52:00,02:31:35,151.5833333,,,,27602,2025,165,22,57
+252,23491,"De Onlanden, P3, De Kampjes",4080060,22-Mar,06:33:00,08:40:00,02:07:00,127,,,,24662,2025,81,15,36
+252,23491,"De Onlanden, P3, De Kampjes",4084417,04-Apr,06:22:00,08:56:00,02:34:00,154,,,,24662,2025,94,25,70
+252,23491,"De Onlanden, P3, De Kampjes",4091891,19-Apr,05:49:00,08:35:00,02:46:00,166,,,,24662,2025,109,21,74
+252,23491,"De Onlanden, P3, De Kampjes",4097187,29-Apr,05:13:00,07:41:00,02:28:00,148,,,mist,24662,2025,119,20,75
+252,23491,"De Onlanden, P3, De Kampjes",4103689,11-May,05:00:00,07:34:00,02:34:00,154,,,,24662,2025,131,26,100
+252,23491,"De Onlanden, P3, De Kampjes",4109143,24-May,04:30:00,07:10:00,02:40:00,160,,,,24662,2025,144,24,81
+252,23491,"De Onlanden, P3, De Kampjes",4115432,09-Jun,04:13:00,07:06:00,02:53:00,173,,,,24662,2025,160,22,78
+252,25805,"De Onlanden, P5, Eeldermaden Noordoost",4081359,27-Mar,06:27:00,09:01:00,02:34:39,154.65,,,,24824,2025,86,24,87
+252,25805,"De Onlanden, P5, Eeldermaden Noordoost",4088760,09-Apr,06:32:00,10:21:00,03:49:17,229.2833333,,,,24824,2025,99,22,89
+252,25805,"De Onlanden, P5, Eeldermaden Noordoost",4089753,05-Mar,11:11:00,12:57:00,01:45:38,105.6333333,,,,39504,2025,64,4,22
+252,25805,"De Onlanden, P5, Eeldermaden Noordoost",4097612,29-Apr,19:11:00,21:25:00,02:14:13,134.2166667,,,,24824,2025,119,24,69
+252,25805,"De Onlanden, P5, Eeldermaden Noordoost",4107161,20-May,05:11:00,08:27:00,03:16:35,196.5833333,,,,24824,2025,140,27,104
+252,25805,"De Onlanden, P5, Eeldermaden Noordoost",4116678,11-Jun,11:50:00,12:40:00,00:49:46,49.76666667,,,,24824,2025,162,14,39
+252,27441,Drempel OVP,4089850,14-Apr,18:07:00,20:07:00,02:00:00,120,,,"wind matig, sluierbewolking",21844,2025,104,24,149
+252,27441,Drempel OVP,4089851,14-Apr,20:36:00,22:06:00,01:30:00,90,,,"avondronde nacht actieve soorten, wind matig,  geen ph",21844,2025,104,1,1
+252,27441,Drempel OVP,4097615,29-Apr,18:38:00,22:36:00,03:58:00,238,,,"wind matig, helder",21844,2025,119,28,154
+252,27441,Drempel OVP,4097756,30-Apr,06:23:00,09:35:00,03:12:00,192,,,"wind zwak, helder",21844,2025,120,34,200
+252,27441,Drempel OVP,4102901,08-May,06:04:00,08:31:00,02:27:00,147,,,"wind zwak, helder",21844,2025,128,19,210
+252,27441,Drempel OVP,4102902,08-May,18:37:00,22:39:00,04:02:00,242,,,"wind matig, grotendeels helder",21844,2025,128,23,151
+252,27441,Drempel OVP,4107950,20-May,18:59:00,22:42:00,03:43:00,223,,,"wind matig, helder",21844,2025,140,17,146
+252,27441,Drempel OVP,4116812,12-Jun,05:16:00,08:23:00,03:07:00,187,,,"helder, stevige wind",21844,2025,163,21,141
+252,27443,Grote Plas OVP,4090018,15-Apr,06:53:00,08:20:00,01:27:00,87,,,"wind matig, helder",21844,2025,105,18,72
+252,27443,Grote Plas OVP,4097120,28-Apr,18:42:00,22:12:00,03:30:00,210,,,,21844,2025,118,19,65
+252,27443,Grote Plas OVP,4097616,29-Apr,06:44:00,09:37:00,02:53:00,173,,,,21844,2025,119,21,84
+252,27443,Grote Plas OVP,4102903,07-May,18:36:00,22:14:00,03:38:00,218,,,"wind aan begin hard tegen eind matig, waarneemkans negatief beïnvloed, wegtrekkende bewolking",21844,2025,127,17,54
+252,27443,Grote Plas OVP,4102904,09-May,06:17:00,09:04:00,02:47:00,167,,,"wind zwak, helder",21844,2025,129,24,101
+252,27443,Grote Plas OVP,4107951,21-May,05:49:00,08:40:00,02:51:00,171,,,"wind matig tot krachtig, grotendeels helder, korte tijd sluierbewolking",21844,2025,141,22,105
+252,27443,Grote Plas OVP,4116811,11-Jun,19:15:00,22:10:00,02:55:00,175,,,"wind matig afnemend naar zwak, heldere lucht",21844,2025,162,17,92
+252,28568,AWD Zeeveld noord,4083247,01-Apr,07:42:00,09:50:00,02:08:00,128,,,,26340,2025,91,11,38
+252,28568,AWD Zeeveld noord,4088576,11-Apr,07:11:00,09:13:00,02:02:00,122,,,,26340,2025,101,14,49
+252,28568,AWD Zeeveld noord,4095623,25-Apr,07:19:00,09:17:00,01:58:00,118,,,,26340,2025,115,17,49
+252,28568,AWD Zeeveld noord,4103692,09-May,07:55:00,10:31:00,02:36:00,156,,,,26340,2025,129,15,49
+252,28568,AWD Zeeveld noord,4107909,21-May,23:39:00,23:50:00,00:11:00,11,,,niets gezien,26340,2025,141,0,1
+252,31748,AWD 2e Infiltr-zuid,4076049,05-Mar,07:30:00,10:30:00,03:00:00,180,,,"WEER: Zon, enige sluierbewolking | TEMP: Nachtvorst, 3 graden oplopend naar 8 graden | WIND: ZW 2BFT aantrekkend naar ZW 4BFT",40186,2025,64,30,118
+252,31748,AWD 2e Infiltr-zuid,4079105,20-Mar,06:40:00,09:50:00,03:10:00,190,,,"WEER: optrekkende nevel, zon | TEMP: 3 oplopend naar 13 graden | WIND: 2BFT zuid",40186,2025,79,31,200
+252,31748,AWD 2e Infiltr-zuid,4083280,02-Apr,07:00:00,10:10:00,03:10:00,190,TRUE,,WEER: zon | TEMP: 4 > 12 graden | WIND: 4BFT NO,40186,2025,92,31,175
+252,31748,AWD 2e Infiltr-zuid,4086954,09-Apr,06:30:00,10:30:00,04:00:00,240,TRUE,,WEER: half bewolkt | TEMP: 5 > 10 graden | WIND: 2-3BFT N,40186,2025,99,43,204
+252,31748,AWD 2e Infiltr-zuid,4093180,22-Apr,06:15:00,10:45:00,04:30:00,270,FALSE,"Fris, meteen vanaf zonsopkomst ging de wind aan (4 BFT ZW). Stuk harder dan oorspronkelijk dag eerder voorspeld.",WEER: geheel bewolkt | TEMP: 9 > 12 graden | WIND: 4BFT ZW,40186,2025,112,41,275
+252,31748,AWD 2e Infiltr-zuid,4099357,03-May,05:30:00,10:30:00,05:00:00,300,TRUE,,WEER: zon | TEMP: 8 > 15 graden | WIND: 1-2BFT NO,40186,2025,123,36,247
+252,31748,AWD 2e Infiltr-zuid,4104300,13-May,05:10:00,10:20:00,05:10:00,310,TRUE,,WEER: zon | TEMP: 8 > 15 graden | WIND: 2-3BFT NO,40186,2025,133,38,215
+252,31748,AWD 2e Infiltr-zuid,4106786,19-May,05:05:00,09:30:00,04:25:00,265,TRUE,,WEER: zon | TEMP: 8 > 17 graden | WIND: 1-3BFT N,40186,2025,139,39,241
+252,31748,AWD 2e Infiltr-zuid,4116442,11-Jun,05:15:00,09:45:00,04:30:00,270,,,,40186,2025,162,39,284
+252,31748,AWD 2e Infiltr-zuid,4117416,13-Jun,21:00:00,23:30:00,02:30:00,150,,,,40186,2025,164,29,64
+252,32459,"Loenderveen, Waterleidingplas",4080152,23-Mar,06:02:00,08:31:00,02:29:00,149,TRUE,,,18426,2025,82,22,110
+252,32459,"Loenderveen, Waterleidingplas",4080183,23-Mar,06:04:00,08:28:00,02:24:00,144,TRUE,,,20695,2025,82,15,45
+252,32459,"Loenderveen, Waterleidingplas",4085371,06-Apr,06:03:00,08:02:00,01:59:00,119,TRUE,,,23406,2025,96,21,99
+252,32459,"Loenderveen, Waterleidingplas",4085381,06-Apr,06:03:00,07:00:00,00:57:00,57,TRUE,,,18426,2025,96,15,42
+252,32459,"Loenderveen, Waterleidingplas",4092310,20-Apr,05:38:00,07:57:00,02:19:00,139,TRUE,,,23406,2025,110,22,104
+252,32459,"Loenderveen, Waterleidingplas",4092323,20-Apr,08:01:00,08:21:00,00:20:00,20,TRUE,,,23406,2025,110,1,1
+252,32459,"Loenderveen, Waterleidingplas",4092387,20-Apr,05:32:00,08:12:00,02:40:00,160,TRUE,,Ronde gelopen met Anco Driessen,20695,2025,110,22,178
+252,32459,"Loenderveen, Waterleidingplas",4098591,01-May,21:56:00,23:18:00,01:22:00,82,TRUE,,,23406,2025,121,1,1
+252,32459,"Loenderveen, Waterleidingplas",4099663,04-May,05:13:00,07:24:00,02:11:00,131,TRUE,,,23406,2025,124,25,162
+252,32459,"Loenderveen, Waterleidingplas",4099666,04-May,05:02:00,07:20:00,02:18:00,138,TRUE,,,20384,2025,124,16,56
+252,32459,"Loenderveen, Waterleidingplas",4106494,18-May,05:05:00,07:28:00,02:23:00,143,,,,25701,2025,138,34,216
+252,32459,"Loenderveen, Waterleidingplas",4106530,18-May,05:05:00,06:34:00,01:29:00,89,TRUE,,,23470,2025,138,17,64
+252,32459,"Loenderveen, Waterleidingplas",4111941,01-Jun,06:04:00,10:09:00,04:05:00,245,TRUE,,,23406,2025,152,33,240
+252,32459,"Loenderveen, Waterleidingplas",4121943,29-Jun,06:10:00,07:53:00,01:43:45,103.75,,,,18426,2025,180,16,117
+252,32459,"Loenderveen, Waterleidingplas",4122000,29-Jun,06:05:00,08:25:00,02:20:00,140,TRUE,,,20695,2025,180,16,41
+252,39540,Plot 6b: Rustgebied Reemsterbos,4077077,10-Mar,09:06:00,11:55:00,02:49:45,169.75,,,"zon, bij einde 9 graden, wind 2 Bf mooi tel weer.",18126,2025,69,21,64
+252,39540,Plot 6b: Rustgebied Reemsterbos,4077201,11-Mar,09:04:00,11:12:00,02:08:00,128,,,"start 5 einde 7 graden, flink bewolkt. geen neerslag. wind begin 2BF later tot 3.",18126,2025,70,21,59
+252,39540,Plot 6b: Rustgebied Reemsterbos,4079630,21-Mar,09:06:00,13:31:00,04:24:44,264.7333333,,,,18126,2025,80,24,107
+252,39540,Plot 6b: Rustgebied Reemsterbos,4082907,01-Apr,08:08:00,11:24:00,03:16:12,196.2,,,start 2 einde 10 htaden. tot 9.30 uur beangstgend dtil in het bos. wind 2 tot 3 bf. bij dtart klrin beetje mist en wat bewolkt. aan einde onbewolkt,18126,2025,91,19,54
+252,39540,Plot 6b: Rustgebied Reemsterbos,4083252,02-Apr,08:12:00,10:06:00,01:53:43,113.7166667,,,"start 6, einde 9 graden, geen wolken, wind 2-3 Bf.",18126,2025,92,19,58
+252,39540,Plot 6b: Rustgebied Reemsterbos,4092450,20-Apr,08:08:00,10:10:00,02:01:33,121.55,,,"zon, vrijwel geen wind, bij einde 10 graden",18126,2025,110,24,77
+252,39540,Plot 6b: Rustgebied Reemsterbos,4092451,12-Apr,08:06:00,09:52:00,01:46:07,106.1166667,,,"zon, start 9 einde 13 graden. gern eolken, vrijwel gern wind",18126,2025,102,17,57
+252,39540,Plot 6b: Rustgebied Reemsterbos,4097486,29-Apr,15:46:00,15:50:00,00:03:48,3.8,,,deel stukje,18126,2025,119,1,2
+252,39540,Plot 6b: Rustgebied Reemsterbos,4098261,01-May,08:09:00,11:07:00,02:57:27,177.45,,,"zon, start 12 graden en einde 22, nauwelijks wind",18126,2025,121,22,85
+252,39540,Plot 6b: Rustgebied Reemsterbos,4098838,02-May,08:09:00,11:01:00,02:51:54,171.9,,,"start 14 graden eine 22. zonnig met sluierbewolking, vrijwrl geen wind, 1 Bf.",18126,2025,122,22,85
+252,39540,Plot 6b: Rustgebied Reemsterbos,4104956,14-May,08:06:00,10:21:00,02:14:12,134.2,,,"licht beeolkt, einde 16 graden, beetje wind",18126,2025,134,23,56
+252,39540,Plot 6b: Rustgebied Reemsterbos,4105363,15-May,08:21:00,11:09:00,02:48:13,168.2166667,,,"bij dtart 12 en einde 16 graden. begin wolken later vooral zon, vrijwel geen wind.",18126,2025,135,19,88
+252,39540,Plot 6b: Rustgebied Reemsterbos,4110477,29-May,06:31:00,08:51:00,02:20:18,140.3,,,"samen met Cobi, geen Sovon code start 7 einde 11 graden met vrijwel gern wind en over slgemeen bewolkt",18126,2025,149,29,79
+252,39540,Plot 6b: Rustgebied Reemsterbos,4111038,30-May,08:15:00,11:18:00,03:02:54,182.9,,,"soms zon, start 16 einde 19 graden. wind vooral noven in bomen. aangenaam telweer.",18126,2025,150,28,92
+252,39540,Plot 6b: Rustgebied Reemsterbos,4112484,02-Jun,08:30:00,08:34:00,00:04:02,4.033333333,,,,18126,2025,153,1,1
+252,39540,Plot 6b: Rustgebied Reemsterbos,4113555,03-Jun,20:59:00,21:03:00,00:03:58,3.966666667,,,waarneming in plot,18126,2025,154,1,1
+252,39540,Plot 6b: Rustgebied Reemsterbos,4116288,10-Jun,20:58:00,21:07:00,00:08:26,8.433333333,,,extra,18126,2025,161,2,2
+252,39540,Plot 6b: Rustgebied Reemsterbos,4116970,12-Jun,12:33:00,12:39:00,00:05:16,5.266666667,,,deeltelling,18126,2025,163,2,2
+252,39540,Plot 6b: Rustgebied Reemsterbos,4118024,16-Jun,08:19:00,12:23:00,04:03:58,243.9666667,,,geen alg soorten opgeschreven. veel jonge vogels,18126,2025,167,19,39
+252,39540,Plot 6b: Rustgebied Reemsterbos,4118313,17-Jun,08:14:00,10:46:00,02:31:56,151.9333333,,,alleen de opvallende waarnemingen opgeschreven,18126,2025,168,13,21
+252,39540,Plot 6b: Rustgebied Reemsterbos,4118569,17-Jun,23:56:00,23:57:00,00:00:58,0.966666667,,,,18126,2025,168,1,1
+252,39540,Plot 6b: Rustgebied Reemsterbos,4120736,24-Jun,20:59:00,21:02:00,00:02:36,2.6,,,extra waarneming,18126,2025,175,1,1
+252,39540,Plot 6b: Rustgebied Reemsterbos,4121765,28-Jun,08:14:00,12:53:00,04:38:41,278.6833333,,,"zonnig met eolken. asn einde meer eolken, wind 3Bf, start 21 einde 24 graden. niet alles opgeschreven. wel soorten, bijzondere en boven de broedcode 2.",18126,2025,179,26,68
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4076233,06-Mar,10:20:00,10:44:00,00:24:00,24,,,,24098,2025,65,1,1
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4079256,07-Mar,10:55:00,11:36:00,00:40:39,40.65,,,,24098,2025,66,5,9
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4079469,21-Mar,06:29:00,09:32:00,03:02:58,182.9666667,,,,24098,2025,80,10,32
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4082908,01-Apr,06:41:00,10:11:00,03:29:28,209.4666667,,,,24098,2025,91,17,55
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4089507,14-Apr,06:14:00,09:36:00,03:21:29,201.4833333,,,,24098,2025,104,15,67
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4096018,26-Apr,05:45:00,10:29:00,04:44:00,284,,,Mist,25983,2025,116,27,108
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4101947,08-May,05:57:00,09:23:00,03:25:30,205.5,,,,24098,2025,128,25,78
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4106539,18-May,05:17:00,09:09:00,03:51:50,231.8333333,,,,24098,2025,138,25,81
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4111229,30-May,21:01:00,21:54:00,00:53:08,53.13333333,,,,24098,2025,150,4,10
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4111683,31-May,22:57:00,23:15:00,00:18:18,18.3,,,,24098,2025,151,3,3
+252,39566,"De Onlanden, P6, Weringsbroeken-west",4118267,17-Jun,04:45:00,07:33:00,02:47:52,167.8666667,,,,24098,2025,168,13,56
+252,60201,OVP: Romijns Diep Noord,4089947,15-Apr,07:55:00,09:33:00,01:38:00,98,,,,32320,2025,105,29,82
+252,60201,OVP: Romijns Diep Noord,4097619,29-Apr,20:09:00,23:06:00,02:57:00,177,,,,32320,2025,119,10,23
+252,60201,OVP: Romijns Diep Noord,4097815,30-Apr,07:46:00,10:28:00,02:42:00,162,,,,32320,2025,120,21,52
+252,60201,OVP: Romijns Diep Noord,4101700,07-May,20:13:00,23:00:00,02:47:00,167,,,"suboptimale omstandigheden,  zie RD Zuid",32320,2025,127,10,13
+252,60201,OVP: Romijns Diep Noord,4101853,08-May,07:34:00,10:01:00,02:27:00,147,,,,32320,2025,128,24,46
+252,60201,OVP: Romijns Diep Noord,4107666,21-May,07:15:00,10:31:00,03:16:00,196,,,"14c, 3bft, 2/8 bewolkt",32320,2025,141,13,23
+252,60201,OVP: Romijns Diep Noord,4116679,11-Jun,21:01:00,21:49:00,00:48:00,48,,,Vroegtijdig moeten beëindigen ivm lage waterstand,32320,2025,162,10,12
+252,64770,Luchter Zeeduinen Noord,4077749,14-Mar,07:05:00,09:51:00,02:46:00,166,,,"4graden, zo2, 1/8, droog",24903,2025,73,14,96
+252,64770,Luchter Zeeduinen Noord,4083225,02-Apr,06:45:00,09:41:00,02:56:00,176,,,"0/8, 5-10 graden, zo 3",24903,2025,92,20,108
+252,64770,Luchter Zeeduinen Noord,4091463,18-Apr,06:29:00,08:53:00,02:24:00,144,,,"10gr, 7/8, zo1",24903,2025,108,18,157
+252,64770,Luchter Zeeduinen Noord,4097796,30-Apr,06:58:00,10:11:00,03:13:00,193,,,"12gr, 0/8, o2",24903,2025,120,23,184
+252,64770,Luchter Zeeduinen Noord,4105356,15-May,05:44:00,10:26:00,04:42:00,282,FALSE,Veel wind uit het noorden,"Veel noordenwind, maakte inventariseren lastig. Ca. 10 gr.",25462,2025,135,18,101
+252,64770,Luchter Zeeduinen Noord,4112586,02-Jun,05:51:00,10:31:00,04:40:00,280,TRUE,,"Bewolkt, zwakke zw wind. Ca. 14 tot 17 graden.",25462,2025,153,15,91
+252,67176,Drempel-Oostvaardersdijk,4089852,14-Apr,18:15:00,22:06:00,03:51:00,231,,,,32320,2025,104,30,211
+252,67176,Drempel-Oostvaardersdijk,4097122,28-Apr,18:45:00,22:16:00,03:31:00,211,,,Later begonnen ivm veranderen gebieden,32320,2025,118,30,176
+252,67176,Drempel-Oostvaardersdijk,4097255,29-Apr,06:29:00,09:49:00,03:20:00,200,,,Iets latere start ivm sleutel hek,32320,2025,119,29,170
+252,67176,Drempel-Oostvaardersdijk,4102248,08-May,18:41:00,22:16:00,03:35:00,215,,,"optimaal. 2 bft no, 1/8 bewolkt, 14c",32320,2025,128,23,125
+252,67176,Drempel-Oostvaardersdijk,4102319,09-May,05:55:00,08:18:00,02:23:00,143,,,,32320,2025,129,27,156
+252,67176,Drempel-Oostvaardersdijk,4107462,20-May,19:09:00,22:23:00,03:14:00,194,,,"13c, 3bft, 1/8 bewolkt",32320,2025,140,29,121
+252,67176,Drempel-Oostvaardersdijk,4116853,12-Jun,05:15:00,08:04:00,02:49:00,169,,,"14c, no3, 1/8 bewolkt",32320,2025,163,20,99
