@@ -8,7 +8,7 @@
 ## 📍 Structure data by site
 ## -----------------------------
 
-source("02_scripts/01_config.R")
+source("territoryMappingData/02_scripts/01_config.R")
 data_enriched <- readRDS(data_enriched_path)           # Load clean, translated territory mapping data, with TABMON clusters info and enriched visits data
 
 #############################################

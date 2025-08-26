@@ -8,7 +8,7 @@
 ## Output: 01_data > processed > 03_data_with_clusters.rds
 ## -----------------------------
 
-source("02_scripts/01_config.R")                                              # Load config
+source("territoryMappingData/02_scripts/01_config.R")                                              # Load config
 translated_data <- readRDS(translated_data_path)                              # Load clean, translated territory mapping data
 sensor_metadata <- read_sheet(bugg_sheet_url, sheet = "Deployments details")  # Read BUGG metadata sheet (stored at bugg_sheet_url)
 

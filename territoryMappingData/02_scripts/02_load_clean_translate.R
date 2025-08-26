@@ -8,7 +8,7 @@
 ## Output: 01_data > processed > 02_translated_data.rds
 ## -----------------------------
 
-source("02_scripts/01_config.R")
+source("territoryMappingData/02_scripts/01_config.R")
 
 #############################################
 ## --- Import data ---
