@@ -2,7 +2,7 @@
 # PERHAPS TO BE USED ON THE VISITS OBJECT ONLY WHEN STARTING COMPARISONS
 
 ## -----------------------------
-## TABMON_dataprep.Rproject, subfolder territoryMappingData
+## TABMON_dataprep.Rproject > territoryMappingData/
 ## XX_structure_by_site.R
 ## ⬆️ Loading data sources: 01_data > processed > 04_data_enriched
 ## 📍 Structure data by site

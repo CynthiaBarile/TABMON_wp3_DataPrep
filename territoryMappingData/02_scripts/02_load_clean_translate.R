@@ -1,5 +1,5 @@
 ## -----------------------------
-## TABMON_dataprep.Rproject, subfolder territoryMappingData
+## TABMON_dataprep.Rproject > territoryMappingData/
 ## 02_load_clean_translate.R
 ## ⬆️ Loading data sources
 ## 🧼 Cleaning data (standardising, deleting redundant columns, handling dates and times)

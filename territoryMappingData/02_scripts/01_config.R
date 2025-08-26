@@ -1,5 +1,5 @@
 ## -----------------------------
-## TABMON_dataprep.Rproject, subfolder territoryMappingData
+## TABMON_dataprep.Rproject > territoryMappingData/
 ## 01_config.R
 ## 🔧 Sets up the environment (libraries, paths, helper functions)
 ## -----------------------------

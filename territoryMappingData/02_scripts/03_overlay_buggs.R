@@ -1,5 +1,5 @@
 ## -----------------------------
-## TABMON_dataprep.Rproject, subfolder territoryMappingData
+## TABMON_dataprep.Rproject > territoryMappingData/
 ## 03_overlay_buggs.R
 ## ⬆️ Loading BUGG metadata
 ## 🧼 Cleaning

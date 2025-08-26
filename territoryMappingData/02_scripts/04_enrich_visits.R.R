@@ -1,5 +1,5 @@
 ## -----------------------------
-## TABMON_dataprep.Rproject, subfolder territoryMappingData
+## TABMON_dataprep.Rproject > territoryMappingData/
 ## 04_enrich_visits.R
 ## 💰 Enrich Visits with Overview info
 ## Input:  01_data > processed > 03_data_with_clusters.rds
