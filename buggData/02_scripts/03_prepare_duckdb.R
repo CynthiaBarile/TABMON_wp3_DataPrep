@@ -1,5 +1,5 @@
 ## -----------------------------
-## buggData/
+## TABMON_dataprep.Rproject > buggData/
 ## 03_prepare_duckdb.R
 ## 🦆 Loads cleaned data into DuckDB
 ## 🔗 Creates SQL views (all_data, all_data_with_metadata)
