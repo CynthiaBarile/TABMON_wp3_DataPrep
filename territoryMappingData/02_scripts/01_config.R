@@ -20,11 +20,11 @@ library(here)
 
 # --- Paths ---
 project_root            <- here::here()
-data_raw                <- file.path(project_root, "01_data/raw")
-data_proc               <- file.path(project_root, "01_data/processed")
+data_raw                <- file.path(project_root, "territoryMappingData", "01_data", "raw")
+data_proc               <- file.path(project_root, "territoryMappingData", "01_data", "processed")
 translated_data_path    <- file.path(data_proc, "02_translated_data.rds")
 data_with_clusters_path <- file.path(data_proc, "03_data_with_clusters.rds")
-data_enriched_path      <- file.path(data_proc, "04_data_enricheds.rds")
+data_enriched_path      <- file.path(data_proc, "04_data_enriched.rds")
 species_key <- read.csv("C:/Users/cbarile/My Drive/PostDoc UvA/TABMON/Species_lists/Species_names_keys/final_multilingual_bird_key.csv")
 bugg_sheet_url          <- "https://docs.google.com/spreadsheets/d/1Wqz7g0I2cqoMFSI-CkN3Fss1h62ceoos6_OtARi490c/edit?gid=208765239#gid=208765239" # BUGG sheet URL
 
