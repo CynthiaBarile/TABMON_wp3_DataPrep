@@ -6,7 +6,7 @@
 ## Output: 01_data > processed > 04_data_enriched.rds, 05_visits_only_data.rds
 ## -----------------------------
 
-source("02_scripts/01_config.R")
+source("territoryMappingData/02_scripts/01_config.R")
 data_with_clusters <- readRDS(data_with_clusters_path)    # Load clean, translated territory mapping data, with TABMON clusters info
 
 
