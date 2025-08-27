@@ -6,12 +6,6 @@
 ## 🧬 Joins with site metadata
 ## -----------------------------
 
-library(DBI)
-library(dplyr)
-library(duckdb)
-library(janitor)
-library(readr)
-
 source("buggData/02_scripts/01_config.R")
 
 # Connect to DuckDB (creates or opens existing DB)

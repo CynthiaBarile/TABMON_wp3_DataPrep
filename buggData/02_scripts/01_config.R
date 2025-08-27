@@ -4,7 +4,17 @@
 ## 🔧 Sets up the environment (path, credentials, constants)
 ## -----------------------------
 
+library(arrow)
+library(DBI)
+library(dplyr)
+library(duckdb)
+library(glue)
 library(here)
+library(httr)
+library(janitor)
+library(purrr)
+library(readr)
+library(tidyverse)
 
 # Load credentials from R environment
 usr <- Sys.getenv("TABMON_USR")

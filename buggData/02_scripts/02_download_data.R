@@ -4,15 +4,6 @@
 ## 💾🧹 Accesses, cleans, downloads parquet data
 ## -----------------------------
 
-library(arrow)
-library(glue)
-library(here)
-library(httr)
-library(janitor)
-library(purrr)
-library(readr)
-library(tidyverse)
-
 source("buggData/02_scripts/01_config.R")
 
 
