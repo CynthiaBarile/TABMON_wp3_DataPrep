@@ -1,6 +1,6 @@
 ## -----------------------------
 ## TABMON_dataprep.Rproject > buggData/
-## 02_download_data.R
+## 02_download_data.R - FROM NINA SERVER
 ## 💾🧹 Accesses, cleans, downloads parquet data
 ## -----------------------------
 
@@ -109,23 +109,11 @@ walk2(valid_files$url, valid_files$local_path, ~ {
   write_parquet(df_clean, .y)
 })
 
-# Optional: loop version for reference/learning
-# for (i in seq_len(nrow(valid_files))) {
-#   url <- valid_files$url[i]
-#   local_path <- valid_files$local_path[i]
-#   temp_file <- tempfile(fileext = ".parquet")
-#   res <- GET(url, authenticate(usr, psswd), write_disk(temp_file, overwrite = TRUE))
-#   if (status_code(res) == 200) {
-#     dt <- read_parquet(temp_file)
-#     dt_filtered <- dt %>% select(any_of(keep_cols))
-#     write_parquet(dt_filtered, local_path)
-#   } else {
-#     warning(paste("Download failed:", url))
-#   }
-# }
 
 
 
+
+#############################
 
 
 ## To adapt some manually downloaded files (sent by Corentin)
