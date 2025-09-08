@@ -28,9 +28,13 @@ overview_df <- read.csv(file.path(data_raw, "overview.csv"))                    
 overview_df <- clean_data(overview_df, 
                           rename_map = rename_overview, 
                           clean_name_cols = "plot_name") %>%
-  mutate(date        = dmy(paste(date, year)),                   # consolidate date, year
-         start_time  = as_hms(start_time),                       # format times appropriately
-         end_time    = as_hms(end_time)) %>%
+  mutate(date                 = dmy(paste(date, year)),                   # consolidate date, year
+         start_time           = as_hms(start_time),                       # format times appropriately
+         end_time             = as_hms(end_time),
+         start_datetime_local = force_tz(as_datetime(date) + seconds(start_time), tzone = "Europe/Amsterdam"),
+         end_datetime_local   = force_tz(as_datetime(date) + seconds(end_time), tzone = "Europe/Amsterdam"),
+         start_datetime_utc   = with_tz(start_datetime_local, "UTC"),
+         end_datetime_utc     = with_tz(end_datetime_local,   "UTC")) %>%
   select(-year, -day_of_year, -project_id)
 
 visits_sf <- clean_data(visits_sf, 
