@@ -16,12 +16,14 @@ visits_sf_en   <- data_with_clusters$visits_sf_en
 
 # Select columns from `overview_df` to join to `visits_sf_en`
 overview_join <- overview_df %>%
-  select(plot_name, visit_id, start_time, end_time, visit_duration_minutes)
+  select(plot_name, visit_id, start_time, end_time, visit_duration_minutes, start_datetime_local, 
+         end_datetime_local, start_datetime_utc, end_datetime_utc)
 
 # Enrich `visits_sf_en` with `overview_df` info
 enriched_visits <- visits_sf_en %>%
   left_join(
-    overview_df %>% select(visit_id, plot_name, start_time, end_time, visit_duration_minutes),
+    overview_df %>% select(visit_id, plot_name, start_time, end_time, visit_duration_minutes, 
+                           start_datetime_local, end_datetime_local, start_datetime_utc, end_datetime_utc),
     by = "visit_id"
   )
 
