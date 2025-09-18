@@ -7,8 +7,8 @@
 source("buggData/02_scripts/01_config.R")
 
 
-# URLs need to be manually given (automatic listing from server not possible atm)
-# e.g. "https://tabmon.nina.no/data/parquet_results/country=France/device_id=688a86aa/2025-03_688a86aa.parquet"
+# URLs need to be manually given (automatic listing from server not possible)
+# e.g. "https://tabmon.nina.no/data/merged_predictions_light/country=France/device_id=688a86aa/2025-03_688a86aa.parquet"
 # To automatise a minimum, access site info to extract country, deviceID.
 
 # Download site_info.csv from the server if not already downloaded
@@ -29,11 +29,12 @@ device_lookup <- site_info %>%
   distinct()
 
 # Define months to consider
-analysis_months <- c("2025-02", "2025-03", "2025-04", "2025-05", "2025-06") # add more here later if needed
+analysis_months <- c("2025-02", "2025-03", "2025-04", "2025-05", "2025-06",
+                     "2025-07", "2025-08") # add more here later if needed
 
 # Generate all possible URLs
 candidate_urls <- crossing(month = analysis_months, device_lookup) %>%
-  mutate(url = glue("https://tabmon.nina.no/data/parquet_results/country={country}/device_id={device_id}/{month}_{device_id}.parquet"))
+  mutate(url = glue("https://tabmon.nina.no/data/merged_predictions_light/country={country}/device_id={device_id}/{month}_{device_id}.parquet"))
 
 # Function to check which URLs actually exist
 check_exists <- function(url) {
@@ -49,106 +50,48 @@ valid_files <- candidate_urls %>% filter(exists)
 valid_files <- valid_files %>%
   mutate(local_path = file.path(download_dir, basename(url)))
 
-# Download the files
-
-## BUT! The full files have columns with acoustic indices, which a) I do not need,
-## b) make the files much heavier.
-## So I will download to a temporary location, read and clean them, then save to disk.
-
-# purrr::walk2(); iterates over two vectors in parallel
-# For each pair of elements (.x from valid_files$url, .y from valid_files$local_path),
-# it runs the function provided in the {}.
 
 # Download, clean, and save cleaned parquet files
 # -------------------------------------------
 
-walk2(valid_files$url, valid_files$local_path, ~ {
-  # Temporary location for download
-  temp_file <- tempfile(fileext = ".parquet")
+walk2(valid_files$url, valid_files$local_path, ~ {                                    # walk2() iterates over two vectors in parallel, for each pair of elements .x and .y
+  temp_file <- tempfile(fileext = ".parquet")                                         # Temporary location for download
   
-  # Download with credentials
-  res <- GET(.x, authenticate(usr, psswd), write_disk(temp_file, overwrite = TRUE))
+  res <- GET(.x, authenticate(usr, psswd), write_disk(temp_file, overwrite = TRUE))   # Download with credentials
   if (status_code(res) != 200) {
     warning(paste("Download failed:", .x))
     return()
   }
-  
-  # Read file
-  df <- read_parquet(temp_file) %>% as_tibble()
-  
-  # Normalize column names (replace spaces with underscores)
-  names(df) <- gsub(" ", "_", names(df))
-  
-  # Extract device ID from the local path (captures what is before .parquet)
-  device_id <- str_match(.y, "([0-9a-f]{7,8})\\.parquet$")[, 2]
+
+  df <- read_parquet(temp_file) %>% as_tibble()                                       # Read file
+  names(df) <- gsub(" ", "_", names(df))                                              # Normalize column names (replace spaces with underscores)
+  device_id <- str_match(.y, "([0-9a-f]{7,8})\\.parquet$")[, 2]                       # Extract device ID from the local path (captures what is before .parquet)
   
   # Create time stamp + clip id + final filename
   df <- df %>%
     mutate(
-      common_name = str_to_lower(common_name),
       scientific_name = str_to_lower(scientific_name),
       device_id = device_id,
-      chunk_index = as.integer(start_time) / 3, # audio clip id in audio filenames (=start time/3)
-      filename_cleaned = str_remove(filename, "\\.mp3$") %>% # remove .mp3
-        paste(device_id, chunk_index, sep = "_"), # add device id and index in filename
-      recording_start_time = str_extract(filename_cleaned, "^[0-9T_\\.:-]+Z") %>% # extract time from filename
-        as.POSIXct(format = "%Y-%m-%dT%H_%M_%OSZ", tz = "UTC"), # format it properly
-      detection_time_utc = recording_start_time + as.numeric(start_time), # datetime column
+      chunk_index = as.integer(start_time) / 3,                                       # audio clip id in audio filenames (=start time/3)
+      filename_cleaned = str_remove(filename, "\\.mp3$") %>%                          # remove ".mp3"
+        paste(device_id, chunk_index, sep = "_"),                                     # add device id and index in filename
+      recording_start_time = str_extract(filename_cleaned, "^[0-9T_\\.:-]+Z") %>%     # extract time from filename
+        as.POSIXct(format = "%Y-%m-%dT%H_%M_%OSZ", tz = "UTC"),                       # format it properly
+      detection_time_utc = recording_start_time + as.numeric(start_time),             # datetime column for detections
     )
   
   # Final columns to keep
-  keep_cols <- c("filename_cleaned", "device_id", "detection_time_utc",
-                 "scientific_name", "common_name", "confidence")
+  keep_cols <- c("filename_cleaned", "device_id", "deploymentID", "recording_start_time", 
+                 "detection_time_utc", "scientific_name", "common_name", "confidence", "uncertainty")
   
   df_clean <- df %>%
     select(any_of(keep_cols)) %>%
     relocate(filename_cleaned) %>%  # optional: make filename first column
-    arrange(filename_cleaned) # orders by filename
+    arrange(filename_cleaned)       # orders by filename
   
   # Save cleaned file
   write_parquet(df_clean, .y)
 })
 
-
-
-
-
-#############################
-
-
-## To adapt some manually downloaded files (sent by Corentin)
-library(fs)
-manual_files_dir <- "C:/Users/cbarile/Desktop"
-manual_files <- dir_ls(manual_files_dir, regexp = "\\.parquet$")
-# Clean and write them
-walk(manual_files, function(file_path) {
-  # Read and normalize column names
-  df <- read_parquet(file_path) %>%
-    as_tibble()
-  names(df) <- gsub(" ", "_", names(df))
-  # Extract device ID from filename
-  device_id <- str_match(path_file(file_path), "([0-9a-f]{7,8})\\.parquet$")[, 2]
-  # Construct chunk index and cleaned filename
-  df <- df %>%
-    mutate(
-      common_name = str_to_lower(common_name),
-      scientific_name = str_to_lower(scientific_name),
-      device_id = device_id,
-      chunk_index = as.integer(start_time) / 3, # audio clip id in audio filenames (=start time/3)
-      filename_cleaned = str_remove(filename, "\\.mp3$") %>% # remove .mp3
-        paste(device_id, chunk_index, sep = "_"), # add device id and index in filename
-      recording_start_time = str_extract(filename_cleaned, "^[0-9T_\\.:-]+Z") %>% # extract time from filename
-        as.POSIXct(format = "%Y-%m-%dT%H_%M_%OSZ", tz = "UTC"), # format it properly
-      detection_time_utc = recording_start_time + as.numeric(start_time), # datetime column
-    )
-  # Final columns to keep
-  keep_cols <- c("filename_cleaned", "device_id", "detection_time_utc",
-                 "scientific_name", "common_name", "confidence")
-  df_clean <- df %>%
-    select(any_of(keep_cols)) %>%
-    relocate(filename_cleaned) %>%
-    arrange(filename_cleaned)
-  # Output path (use same name)
-  out_file <- path(manual_files_dir, path_file(file_path))
-  write_parquet(df_clean, out_file)
-})
+# Quick check 
+# read_parquet(valid_files$local_path[1]) %>% head()
