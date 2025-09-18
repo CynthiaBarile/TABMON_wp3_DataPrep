@@ -69,6 +69,7 @@ walk2(valid_files$url, valid_files$local_path, ~ {                              
   
   # Create time stamp + clip id + final filename
   df <- df %>%
+    rename(deployment_id = deploymentID) %>%
     mutate(
       scientific_name = str_to_lower(scientific_name),
       device_id = device_id,
@@ -81,7 +82,7 @@ walk2(valid_files$url, valid_files$local_path, ~ {                              
     )
   
   # Final columns to keep
-  keep_cols <- c("filename_cleaned", "device_id", "deploymentID", "recording_start_time", 
+  keep_cols <- c("filename_cleaned", "device_id", "deployment_id", "recording_start_time", 
                  "detection_time_utc", "scientific_name", "common_name", "confidence", "uncertainty")
   
   df_clean <- df %>%

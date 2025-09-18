@@ -41,9 +41,11 @@ names(site_info) <- make_clean_names(names(site_info))
 
 # Extract only needed metadata columns and rename them for clarity
 site_metadata <- site_info %>%
-  select(country, device_id, cluster, site, habitat = x12_habitat, latitude, longitude) %>%
+  select(country, cluster, site, habitat = x12_habitat, latitude, longitude, 
+         device_id, deployment_id, active, deployment_begin_date, deployment_begin_time, 
+         deployment_end_date, deployment_end_time) %>% 
   distinct() %>%
-  mutate(across(where(is.character), tolower))
+  mutate(across(where(is.character) & -all_of("deployment_id"), tolower))
 
 # Write metadata as DuckDB table so it can then be joined via SQL
 dbWriteTable(db_connect, "site_metadata", site_metadata, overwrite = TRUE)
@@ -55,16 +57,16 @@ dbWriteTable(db_connect, "site_metadata", site_metadata, overwrite = TRUE)
 dbExecute(db_connect, "
   CREATE OR REPLACE VIEW all_data_with_metadata AS
   SELECT 
-    a.*,                                  -- all data columns (filename, timestamp, etc.)
-    m.country,                            -- join: add country from site_metadata
-    m.cluster,                            -- join: add cluster from site_metadata
-    m.site,                               -- join: add site from site_metadata
-    m.habitat,                            -- join: add habitat from site_metadata
-    m.latitude,                           -- join: add latitude from site_metadata
-    m.longitude                           -- join: add longitude from site_metadata
-  FROM all_data a                         -- alias `a` = all_data view
-  LEFT JOIN site_metadata m               -- alias `m` = site_metadata table
-    ON a.device_id = m.device_id          -- join condition: matching device_ID
+    a.*,                                    -- all data columns (filename, timestamp, etc.)
+    m.country,                              -- join: add country from site_metadata
+    m.cluster,                              -- join: add cluster from site_metadata
+    m.site,                                 -- join: add site from site_metadata
+    m.habitat,                              -- join: add habitat from site_metadata
+    m.latitude,                             -- join: add latitude from site_metadata
+    m.longitude                             -- join: add longitude from site_metadata
+  FROM all_data a                           -- alias `a` = all_data view
+  LEFT JOIN site_metadata m                 -- alias `m` = site_metadata table
+    ON a.deployment_id = m.deployment_id    -- join condition: matching deployment_id
 ")
 
 # Optional: sanity check on joined data
@@ -73,4 +75,3 @@ View(df_preview)
 
 # Disconnect from database
 dbDisconnect(db_connect)
-
