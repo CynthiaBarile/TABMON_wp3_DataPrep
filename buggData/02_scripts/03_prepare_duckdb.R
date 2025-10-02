@@ -41,7 +41,7 @@ names(site_info) <- make_clean_names(names(site_info))
 
 # Extract only needed metadata columns and rename them for clarity
 site_metadata <- site_info %>%
-  select(country, cluster, site, habitat = x12_habitat, latitude, longitude, 
+  select(country, cluster, site, habitat, latitude, longitude, 
          device_id, deployment_id, active, deployment_begin_date, deployment_begin_time, 
          deployment_end_date, deployment_end_time) %>% 
   distinct() %>%
@@ -72,6 +72,15 @@ dbExecute(db_connect, "
 # Optional: sanity check on joined data
 df_preview <- dbGetQuery(db_connect, "SELECT * FROM all_data_with_metadata LIMIT 100")
 View(df_preview)
+
+# Check for NAs across all columns
+cols <- dbListFields(db_connect, "all_data_with_metadata") # get column names
+any_null_expr <- paste0("(", paste(cols, "IS NULL", collapse = " OR "), ")") # create an expression that is TRUE if any column is NULL
+# full query
+query <- paste0("SELECT COUNT(*) AS n_missing FROM all_data_with_metadata WHERE ", any_null_expr)
+# execute
+n_missing <- dbGetQuery(db_connect, query)
+n_missing # 10 NAs due to just 10 detections from one file (device 1d3), Feb 13th where time stamp was missing seconds.
 
 # Disconnect from database
 dbDisconnect(db_connect)
