@@ -62,7 +62,7 @@ walk2(valid_files$url, valid_files$local_path, ~ {                              
     warning(paste("Download failed:", .x))
     return()
   }
-
+  
   df <- read_parquet(temp_file) %>% as_tibble()                                       # Read file
   names(df) <- gsub(" ", "_", names(df))                                              # Normalize column names (replace spaces with underscores)
   device_id <- str_match(.y, "([0-9a-f]{7,8})\\.parquet$")[, 2]                       # Extract device ID from the local path (captures what is before .parquet)
@@ -96,3 +96,48 @@ walk2(valid_files$url, valid_files$local_path, ~ {                              
 
 # Quick check 
 # read_parquet(valid_files$local_path[1]) %>% head()
+
+
+#####################################################################
+## There was an issue in an older file (2025-02_cfc291d3.parquet); re-deployment date was ulterior to some recordings, 
+## so those have no deployment_id associated to them in the table. I ammended that re-deployment time slightly to fix that.
+## But as AI already ran, now I'll just fill those NAs with what's missing and re-save that dataset:
+df <- read_parquet("./buggData/01_data/parquet_clean/2025-02_cfc291d3.parquet")
+df %>%
+  filter(deployment_id == "0")  # 94 rows with 0 for deployment_id, I replace that
+
+df <- df %>%
+  mutate(deployment_id = na_if(deployment_id, "0")) %>%  # turn "0" into NA
+  fill(deployment_id, .direction = "down")               # forward-fill from previous row
+
+## save new fixed file (in a safer way than just overwriting)
+outfile <- "./buggData/01_data/parquet_clean/2025-02_cfc291d3.parquet"  # path to file
+tmpfile <- paste0(outfile, ".tmp")                                      # create as temporary file
+write_parquet(df, tmpfile)                                              # write temporary file
+file.rename(tmpfile, outfile)                                           # Replace the original file
+
+# Let's check more systematically for NAs across parquet files.
+parquet_files <- list.files(download_dir, pattern = "\\.parquet$", full.names = TRUE) # List all parquet files
+
+# Loop through files and check for NAs
+na_summary <- lapply(parquet_files, function(file_path) {
+  df <- read_parquet(file_path)
+  # Count NAs per column
+  na_counts <- colSums(is.na(df))
+  # Keep only columns with at least 1 NA
+  na_counts <- na_counts[na_counts > 0]
+  if(length(na_counts) > 0) {
+    data.frame(
+      file = basename(file_path),
+      column = names(na_counts),
+      na_count = as.integer(na_counts),
+      row.names = NULL
+    )
+  } else {
+    NULL  # no NAs in this file
+  }
+})
+
+# Combine results into a single table
+na_summary_df <- do.call(rbind, na_summary)
+print(na_summary_df)
