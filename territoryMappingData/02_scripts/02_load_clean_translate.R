@@ -24,6 +24,8 @@ overview_df <- read.csv(file.path(data_raw, "overview.csv"))                    
 #############################################
 # --- Rename, format date & time, clean ---
 #############################################
+# /!\ Saw at later stages, that one visit (visit_id == 4107909) does not appear in the visits_sf because no bird seen
+# This is still effort, so should be kept. 
 
 overview_df <- clean_data(overview_df, 
                           rename_map = rename_overview, 
@@ -42,6 +44,11 @@ visits_sf <- clean_data(visits_sf,
   mutate(date = make_date(year, month, day)) %>%                 # consolidate year/month/day
   relocate(date, .before = day) %>%                              # move that new column
   select(-year, -month, -day, -day_of_year, -project_id)         # remove those now redundant columns
+
+# >>> Add missing visit from overview_df into visits_sf
+visit_missing <- overview_df %>%
+  filter(visit_id == 4107909) %>%
+  select(any_of(names(visits_sf))) # done
 
 transects_sf <- clean_data(transects_sf, 
                            rename_map = rename_transects, 
