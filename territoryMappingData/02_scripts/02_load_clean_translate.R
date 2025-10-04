@@ -48,7 +48,8 @@ visits_sf <- clean_data(visits_sf,
 # >>> Add missing visit from overview_df into visits_sf
 visit_missing <- overview_df %>%
   filter(visit_id == 4107909) %>%
-  select(any_of(names(visits_sf))) # done
+  select(any_of(names(visits_sf))) 
+visits_sf <- bind_rows(visits_sf, visit_missing) # done
 
 transects_sf <- clean_data(transects_sf, 
                            rename_map = rename_transects, 
